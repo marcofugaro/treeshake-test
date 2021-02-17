@@ -1,3 +1,3 @@
 import { UsedClass } from './library'
 
-console.log(UsedClass)
+console.log(new UsedClass())

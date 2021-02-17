@@ -1,13 +1,6 @@
 class UsedClass {}
 
-class UnusedClass {
-  constructor() {
-    this.name = 'UnusedClass'
-  }
-}
+class UnusedClass {}
+UnusedClass.prototype.type = 'UnusedClass'
 
-const unusedVariable = new UnusedClass();
-
-
-
-export { UsedClass };
+export { UsedClass }
