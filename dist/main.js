@@ -1,1 +1,0 @@
-(class{}).prototype.type="UnusedClass",console.log(new class{});

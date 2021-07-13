@@ -6,6 +6,6 @@ export default {
     terser(),
   ],
   output: {
-    file: './dist/main-rollup.js',
+    file: './dist/index-rollup.js',
   },
 }
