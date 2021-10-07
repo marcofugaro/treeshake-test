@@ -3,14 +3,17 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "build": "npm run build-webpack && npm run build-rollup && npm run build-parcel",
+    "build": "npm run build-webpack && npm run build-rollup && npm run build-parcel && npm run build-esbuild",
     "build-webpack": "webpack",
     "build-rollup": "rollup -c rollup.config.js",
-    "build-parcel": "parcel build src/index.js --target browser --out-file index-parcel.js --no-source-maps --no-cache --experimental-scope-hoisting"
+    "build-parcel": "parcel build src/index.js --target browser --out-file index-parcel.js --no-source-maps --no-cache --experimental-scope-hoisting",
+    "build-esbuild": "esbuild src/index.js --outfile=dist/index-esbuild.js --bundle --format=esm --minify"
   },
   "author": "",
   "license": "MIT",
   "devDependencies": {
+    "@rollup/plugin-node-resolve": "^13.0.5",
+    "esbuild": "^0.13.4",
     "parcel-bundler": "^1.12.5",
     "rollup": "^2.58.0",
     "rollup-plugin-terser": "^7.0.2",
