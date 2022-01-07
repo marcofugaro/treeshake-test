@@ -5,7 +5,7 @@
   "scripts": {
     "build": "export ENTRY=./src/index.js && npm run build-all",
     "build-three": "export ENTRY=./src/index-three.js && npm run build-all",
-    "build-buffergeom": "export ENTRY=./src/index-buffergeometryutil.js && npm run build-all",
+    "build-buffergeom": "export ENTRY=./src/index-buffergeometryutils.js && npm run build-all",
     "build-all": "npm run build-webpack && npm run build-rollup && npm run build-parcel && npm run build-esbuild",
     "build-webpack": "webpack",
     "build-rollup": "rollup -c rollup.config.js",
