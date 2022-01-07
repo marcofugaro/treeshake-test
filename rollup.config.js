@@ -2,7 +2,7 @@ import { terser } from "rollup-plugin-terser";
 import { nodeResolve } from '@rollup/plugin-node-resolve';
 
 export default {
-  input: 'src/index.js',
+  input: process.env.ENTRY || './src/index.js',
   plugins: [
     nodeResolve(),
     terser(),

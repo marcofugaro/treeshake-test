@@ -1,6 +1,6 @@
 export default {
   mode: 'production',
-  entry: './src/index.js',
+  entry: process.env.ENTRY || './src/index.js',
   output: {
     filename: 'index-webpack.js',
     module: true,
