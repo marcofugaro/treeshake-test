@@ -6,10 +6,9 @@
     "build": "export ENTRY=./src/index.js && npm run build-all",
     "build-three": "export ENTRY=./src/index-three.js && npm run build-all",
     "build-buffergeom": "export ENTRY=./src/index-buffergeometryutils.js && npm run build-all",
-    "build-all": "npm run build-webpack && npm run build-rollup && npm run build-parcel && npm run build-esbuild",
+    "build-all": "npm run build-webpack && npm run build-rollup && npm run build-esbuild",
     "build-webpack": "webpack",
     "build-rollup": "rollup -c rollup.config.js",
-    "build-parcel": "parcel build $ENTRY --target browser --out-file index-parcel.js --no-source-maps --no-cache --experimental-scope-hoisting",
     "build-esbuild": "esbuild $ENTRY --outfile=dist/index-esbuild.js --bundle --format=esm --minify"
   },
   "author": "",
@@ -17,7 +16,6 @@
   "devDependencies": {
     "@rollup/plugin-node-resolve": "^13.3.0",
     "esbuild": "^0.14.38",
-    "parcel-bundler": "^1.12.5",
     "rollup": "^2.71.1",
     "rollup-plugin-terser": "^7.0.2",
     "terser-webpack-plugin": "^5.3.1",
