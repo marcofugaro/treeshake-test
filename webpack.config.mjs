@@ -8,4 +8,7 @@ export default {
 
   // output an esmodule
   experiments: { outputModule: true },
+
+  // disable size warnings
+  stats: { warnings: false },
 }
