@@ -6,6 +6,7 @@
     "build": "export ENTRY=./src/index.js && npm run build-all",
     "build-three": "export ENTRY=./src/index-three.js && npm run build-all",
     "build-buffergeom": "export ENTRY=./src/index-buffergeometryutils.js && npm run build-all",
+    "build-instanceof": "export ENTRY=./src/index-instanceof.js && npm run build-all",
     "build-all": "npm run build-webpack && npm run build-rollup && npm run build-esbuild",
     "build-webpack": "webpack",
     "build-rollup": "rollup -c rollup.config.js",
@@ -24,6 +25,6 @@
     "webpack-cli": "^4.10.0"
   },
   "dependencies": {
-    "three": "^0.141.0"
+    "three": "^0.142.0"
   }
 }
