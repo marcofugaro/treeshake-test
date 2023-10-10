@@ -1,3 +1,5 @@
+import TerserPlugin from 'terser-webpack-plugin'
+
 export default {
   mode: 'production',
   entry: process.env.ENTRY || './src/index.js',
@@ -11,4 +13,11 @@ export default {
 
   // disable size warnings
   stats: { warnings: false },
+
+  // disable LICENSE file
+  optimization: {
+    minimizer: [new TerserPlugin({
+      extractComments: false,
+    })],
+  },
 }
