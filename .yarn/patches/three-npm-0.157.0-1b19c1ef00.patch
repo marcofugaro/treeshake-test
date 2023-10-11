@@ -1,0 +1,22 @@
+diff --git a/examples/jsm/Addons.js b/examples/jsm/Addons.js
+new file mode 100644
+index 0000000000000000000000000000000000000000..72ee3c6f5cae18e5d054eb0911400bd165702a57
+--- /dev/null
++++ b/examples/jsm/Addons.js
+@@ -0,0 +1,3 @@
++export * from './loaders/LottieLoader.js';
++
++export class UsedClass {}
+\ No newline at end of file
+diff --git a/package.json b/package.json
+index 9bda9c4df432fa13b6ffbebaec7c43b3daca3f43..2a22ebee5d519c27e33c9e831985801e6d7f1aa5 100644
+--- a/package.json
++++ b/package.json
+@@ -13,6 +13,7 @@
+     "./examples/fonts/*": "./examples/fonts/*",
+     "./examples/jsm/*": "./examples/jsm/*",
+     "./addons/*": "./examples/jsm/*",
++    "./addons": "./examples/jsm/Addons.js",
+     "./src/*": "./src/*",
+     "./nodes": "./examples/jsm/nodes/Nodes.js"
+   },

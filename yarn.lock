@@ -2862,10 +2862,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"three@npm:^0.157.0":
+"three@npm:0.157.0":
   version: 0.157.0
   resolution: "three@npm:0.157.0"
   checksum: 444797461c9db09d8a4cad886e494c2e6dd5754f09ac7ac4af75a3bf1143ae79641388db31999edcc76c5dba9677639f09da2df8d0128396a1dd59e41226c85c
+  languageName: node
+  linkType: hard
+
+"three@patch:three@npm%3A0.157.0#./.yarn/patches/three-npm-0.157.0-1b19c1ef00.patch::locator=webpack-treeshake-test%40workspace%3A.":
+  version: 0.157.0
+  resolution: "three@patch:three@npm%3A0.157.0#./.yarn/patches/three-npm-0.157.0-1b19c1ef00.patch::version=0.157.0&hash=a63024&locator=webpack-treeshake-test%40workspace%3A."
+  checksum: f86055ee5d422f676f12b6f7e5796a0b38c407348bcc011578b9d5fedfa28ee51a1f597ca107eaa7e635d8394e75198e23b315ac9cebc73afcf1e0bb3b5d4d37
   languageName: node
   linkType: hard
 
