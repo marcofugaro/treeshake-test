@@ -3,10 +3,7 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "build": "ENTRY=./src/index.js && yarn build-all",
-    "build-three": "ENTRY=./src/index-three.js && yarn build-all",
-    "build-buffergeom": "ENTRY=./src/index-buffergeometryutils.js && yarn build-all",
-    "build-instanceof": "ENTRY=./src/index-instanceof.js && yarn build-all",
+    "build": "ENTRY=./src/index-three.js && yarn build-all",
     "build-all": "yarn build-webpack && yarn build-rollup && yarn build-esbuild",
     "build-webpack": "webpack",
     "build-rollup": "rollup -c rollup.config.js",
