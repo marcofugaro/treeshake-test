@@ -1,3 +1,3 @@
-import { UsedClass } from 'three/addons'
+import { IESSpotLight } from 'three/addons'
 
-console.log(new UsedClass())
+console.log(new IESSpotLight())
