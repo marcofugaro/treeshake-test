@@ -6,7 +6,7 @@ export default {
   input: process.env.ENTRY || './src/index.js',
   plugins: [
     nodeResolve(),
-    terser(),
+    // terser(),
     filesize(),
   ],
   output: {
