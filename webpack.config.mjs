@@ -14,10 +14,8 @@ export default {
   // disable size warnings
   stats: { warnings: false },
 
-  // disable LICENSE file
+  // disable minification
   optimization: {
-    minimizer: [new TerserPlugin({
-      extractComments: false,
-    })],
+    minimize: false,
   },
 }
