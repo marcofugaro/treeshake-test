@@ -1,3 +1,3 @@
-import { IESSpotLight } from 'three/addons'
+import { FXAAShader } from 'three/addons'
 
-console.log(new IESSpotLight())
+console.log(new FXAAShader())
