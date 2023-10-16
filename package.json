@@ -7,7 +7,7 @@
     "build-all": "yarn build-webpack && yarn build-rollup && yarn build-esbuild",
     "build-webpack": "webpack",
     "build-rollup": "rollup -c rollup.config.js",
-    "build-esbuild": "esbuild $ENTRY --outfile=dist/index-esbuild.js --bundle --format=esm"
+    "build-esbuild": "esbuild $ENTRY --outfile=dist/index-esbuild.js --bundle --format=esm --external:fs"
   },
   "author": "",
   "license": "MIT",
